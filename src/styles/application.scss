@@ -1,0 +1,14 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    font-size: 10px;
+    @media screen and (max-width: $medium) {
+        font-size: 8px;
+    }
+}

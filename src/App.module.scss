@@ -1,0 +1,27 @@
+@import './styles/application.scss';
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $white;
+  &::after {
+    content: ' ';
+    border-top: 60vh solid $primary-color;
+    border-right: 60vw solid transparent;
+    width: 0;
+    position: absolute;
+    top: 0;
+    @media screen and (max-width: $medium) {
+      border-top: 50vh solid $primary-color;
+      border-right: 100vw solid transparent;
+    }
+  }
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 150px 20px;
+}
